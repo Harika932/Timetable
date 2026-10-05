@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>College Timetable</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Weekly Class Timetable</h1>
+
+      <h2>Computer Science & Engineering</h2>
+
+      <table>
+        <!-- Table Heading -->
+        <tr>
+          <th>Day</th>
+          <th>9:00 - 10:00</th>
+          <th>10:00 - 11:00</th>
+          <th>11:00 - 12:00</th>
+          <th>12:00 - 1:00</th>
+          <th>1:00 - 2:00</th>
+          <th>2:00 - 3:00</th>
+          <th>3:00 - 4:00</th>
+        </tr>
+
+        <!-- ================= MONDAY ================= -->
+
+        <tr>
+          <td class="day">Monday</td>
+
+          <td>Python</td>
+
+          <td>DBMS</td>
+
+          <td>Computer Networks</td>
+
+          <td>Web Technology</td>
+
+          <!-- Lunch continues vertically -->
+          <td rowspan="5" class="lunch">LUNCH</td>
+
+          <td>Data Analytics</td>
+
+          <td>Lab</td>
+        </tr>
+
+        <!-- ================= TUESDAY ================= -->
+
+        <tr>
+          <td class="day">Tuesday</td>
+
+          <td>Web Technology</td>
+
+          <td>Python</td>
+
+          <td>DBMS</td>
+
+          <td>Computer Networks</td>
+
+          <!-- Lunch cell is already created above -->
+
+          <td>Operating System</td>
+
+          <td>Data Analytics</td>
+        </tr>
+
+        <!-- ================= WEDNESDAY ================= -->
+
+        <tr>
+          <td class="day">Wednesday</td>
+
+          <td>DBMS</td>
+
+          <td>Web Technology</td>
+
+          <td>Python</td>
+
+          <td>Computer Networks</td>
+
+          <!-- Lunch cell is already created above -->
+
+          <td colspan="2" class="two-hour">Data Analytics</td>
+        </tr>
+
+        <!-- ================= THURSDAY ================= -->
+
+        <tr>
+          <td class="day">Thursday</td>
+
+          <td>Data Analytics</td>
+
+          <td>DBMS</td>
+
+          <td>Web Technology</td>
+
+          <td>Python</td>
+
+          <!-- Lunch cell is already created above -->
+
+          <td>Computer Networks</td>
+
+          <td>Operating System</td>
+        </tr>
+
+        <!-- ================= FRIDAY ================= -->
+
+        <tr>
+          <td class="day">Friday</td>
+
+          <!-- Operating System = 2 Hours -->
+          <td colspan="2" class="two-hour">Operating System</td>
+
+          <td>DBMS</td>
+
+          <td>Python</td>
+
+          <!-- Lunch cell is already created above -->
+
+          <!-- Python Lab = 2 Hours -->
+          <td colspan="2" class="two-hour">Python Lab</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
